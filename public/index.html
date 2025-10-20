@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/global.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/green.css">
+   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+   <title>Projeto Terminal</title>
+</head>
+<body>
+   <span class="input-caret"></span>
+   
+   <main>
+      <section class="walkthrough-paper hiddenPaper">
+         <div class="paper-piece-1 hiddenPaper"></div>
+         <div class="paper-piece-2 hiddenPaper"></div>
+         <div class="paper-piece-3 hiddenPaper"></div>
+         <div class="paper-piece-4"></div>
+         <div class="paper-text hiddenPaper"></div>
+      </section>
+
+      <section class="computer-container">
+         <div class="computer-screen-horizontal-edges">
+            <div class="computer-screen-vertical-edges"></div>
+            <div class="computer-screen-inner-horizontal-edges"></div>
+            <div class="computer-screen-inner-vertical-edges"></div>
+            <div class="computer-screen">
+               <p class="content">[INFO] Welcome to the CRT API Terminal! Click on the paper beside to start.</p>
+               <div class="input-wrapper">
+                  <span>></span>
+                  <div class="user-input" contenteditable="true" autofocus="true" spellcheck="false">&ZeroWidthSpace;</div>
+               </div>
+            </div>
+
+            <div class="vertical-roll-wrapper">
+               <div class="vertical-roll-inner">
+                  <div class="vertical-roll"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <script type="module" src="./index.js"></script>
+</body>
+</html>

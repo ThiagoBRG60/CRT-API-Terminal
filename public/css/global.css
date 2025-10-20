@@ -1,0 +1,77 @@
+@font-face {
+   font-family: "Terminal Font";
+   src: url("../assets/fonts/Glass_TTY_VT220.ttf");
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+}
+
+body {
+   height: 100dvh;
+   display: flex;
+   align-items: center;
+   padding: 0 20px;
+   background-color: #0E0E0E;
+}
+
+main {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+
+body::after {
+   content: "";
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: absolute;
+   z-index: -1;
+}
+
+@keyframes blink {
+   50% {opacity: 0;}
+}
+
+@keyframes verticalRoll {
+   to {bottom: -100px;}
+}
+
+@keyframes foldVertical {
+   to {transform: perspective(1000px) rotateX(-180deg); opacity: 0;}
+}
+
+@keyframes unfoldVertical {
+   to {transform: perspective(1000px) rotateX(0deg); opacity: 1;}
+}
+
+@keyframes foldHorizontal {
+   to {transform: perspective(1000px) rotateY(180deg);}
+}
+
+@keyframes unfoldHorizontal {
+   to {transform: perspective(1000px) rotateY(0deg);}
+}
+
+@keyframes hidePaperText {
+   to {opacity: 0; pointer-events: none;}
+}
+
+@keyframes showPaperText {
+   to {opacity: 1; pointer-events: all;}
+}
+
+@keyframes hidePaper {
+   to {transform: translate(240px, -125px) rotateZ(45deg);}
+}
+
+@keyframes showPaper {
+   to {transform: translate(0, 0) rotateZ(0deg);}
+}
