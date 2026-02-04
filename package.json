@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "npm run create:temp && node server.js",
+    "create:temp": "node -e \"require('fs').mkdirSync('temp', { recursive: true })\""
   },
   "dependencies": {
     "commander": "^14.0.1",

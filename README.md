@@ -13,8 +13,6 @@
    </a>
 </p>
 
-![Resultado final do projeto](./public/assets/images/crt-api-terminal.gif)
-
 ## 📝 Descrição
 
 Uma aplicação que simula um terminal interativo em um monitor CRT retrô. Nesse projeto, o usuário pode executar comandos diretamente no terminal e acessar rotas de API próprias, que retornam informações sobre arquivos, sistema operacional, compressão e descompressão, entre outras funcionalidades. Exibindo todos os resultados em tempo real na tela.
