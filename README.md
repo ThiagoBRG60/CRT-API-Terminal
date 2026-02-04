@@ -13,6 +13,10 @@
    </a>
 </p>
 
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/534584bb-4a7a-4241-87da-3e20722aaade" alt="project gif"/>
+</div>
+
 ## 📝 Descrição
 
 Uma aplicação que simula um terminal interativo em um monitor CRT retrô. Nesse projeto, o usuário pode executar comandos diretamente no terminal e acessar rotas de API próprias, que retornam informações sobre arquivos, sistema operacional, compressão e descompressão, entre outras funcionalidades. Exibindo todos os resultados em tempo real na tela.
